@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Existing Opinions</title>
+
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <title>Existing Opinions</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Spartan:200&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+
+
+
+        <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="theproject.html">The Project</a>
+                <a href="episodes.html">Episodes</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+
+        </nav>
+
+<article class="article">
+
+<img  src="img/frontpage1.jpg" alt="picture" width='1425px' height="800px">
+<center><p>Existing Opinions is dedicated to American voices, specifically the ones that aren't heard.
+   The voices in this country that are heard are predominantly from politicians and celebrities.</p>
+
+<p>This project is meant to voice opinions, to demonstrate the importance of a citizen that is not at a well-known
+  level like a politician or a celebrity. You will notice that most of the participants are college students even though the
+project is not based on young adults, however, Millennials and Generation Z have a open mindedness that the
+above generations to do not have due to the fact that citizens over the age of 40 have a specific way they were raised. If you have any
+type of opinions, questions, ideas; submit them to the comment section below.</p>
+
+<h1> The format</h1>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+<p>The topics are not predominately following the itch of Americans but is following what has impacts on our lives.
+They are chosen randomly per week and per who would like to participate biweekly. The recording of the videos is quite simple. Before recording
+the topic is presented to the participant to make sure they are okay discussing the topic. After the topic is presented to them with the
+topic, the recording starts, and the participant is told the first fact of the topic. Three facts or questions will be told to them with their
+response after each one. In no way were answers cut or reconstructed. </p>
+
+  <br>
+<img  src="img/studio.jpg" alt="picture" width='1425px' height="800px">
+
+</div>
+</article>
+
+<header id="comments">
+  <h1>Comments</h1>
+</header>
+ <center><p>Leave a comment below to share any opinions, thoughts, or ideas.</p>
+
+<br>
+
+<div class="comment">
+<center><textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="Write a comment......"></textarea>
+<input type="submit"
+value="Post" onclick="insert()" style="width:100px;" /></form>
+</div>
+
+<br>
+
+<h3>Existing Opinions Comments Below</h3>
+<div id="display"></div>
+
+<script type="text/javascript">
+var titles = [];
+var titleInput = document.getElementById("title");
+var messageBox = document.getElementById("display");
+function Allow()
+{
+if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+{
+user.title.value="";
+alert("Please Enter only alphabets");
+}
+window.location.reload()
+}
+function insert () {
+titles.push(titleInput.value);
+clearAndShow();
+}
+function clearAndShow ()
+{
+titleInput.value = "";
+messageBox.innerHTML = "";
+messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+}
+</script>
+
+<br>
+    <header id='upcomingepisodes'>
+			<h1>Upcoming Episodes</h1>
+		</header>
+
+<center><div id='videos'>Obesity in America</div>
+        <div id='videos'>The Social Media Pressure in America</div>
+        <div id='videos'>Legend Deaths vs. Ordinary Citizen Deaths</div>
+
+
+<footer>
+
+          <nav class="topnav1" id="myTopnav1">
+                  <a href="index.html" class="active">Home</a>
+                  <a href="theproject.html">The Project</a>
+                  <a href="episodes.html">Episodes</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+
+          </nav>
+
+</footer>
+        <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
